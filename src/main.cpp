@@ -12,6 +12,7 @@ if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)) {
     Serial.println("oled not found");
     while (true);
 }
+display.clearDisplay();
 }
 void loop() {
 // write your code here
