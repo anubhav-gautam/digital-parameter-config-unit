@@ -13,6 +13,8 @@ if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)) {
     while (true);
 }
 display.clearDisplay();
+display.setTextSize(1);
+display.setTextColor(SSD1306_WHITE);
 }
 void loop() {
 // write your code here
