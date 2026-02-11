@@ -15,6 +15,12 @@ if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)) {
 display.clearDisplay();
 display.setTextSize(1);
 display.setTextColor(SSD1306_WHITE);
+display.setCursor(0, 0);
+display.println("Arduino uno R4");
+    display.println("OLED with 12C");
+    display.println("Hello Students!");
+display.display();
+
 }
 void loop() {
 // write your code here
